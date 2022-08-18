@@ -1,0 +1,30 @@
+body
+{
+    background-color: #efefef !important;
+}
+
+#circle
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+}
+
+.laoder
+{
+    padding: 5px;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border-radius: 50%;
+    border: 3px solid #efefef;
+    border-bottom: 3px solid red ;
+    border-top: 3px solid red;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    100% { transform: rotate(360deg);}
+}
